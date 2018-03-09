@@ -1,0 +1,415 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ *
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+ @media screen and (max-width: 1100px) {
+  	.PCItext {
+  	 margin:75px !important;
+  	}
+ }
+ @media screen and (max-width: 979px) {
+ 	#twitbox{
+ 		display: none;
+ 	}
+ }
+ @media screen and (max-width: 870px) {
+ 	.PCItext {
+ 	 margin:0px !important;
+ 	}
+     .FAQtext {
+         margin:0px !important;
+     }
+
+ }
+ @media screen and (max-width: 640px) {
+ 	table {
+ 		overflow-x: auto;
+ 		display: block;
+ 	}
+     #ads {
+     	visibility: hidden;
+     }
+
+     #tutorial{display:none !important;}
+     #fullscreen{display:none !important;}
+ }
+
+ @media screen and (max-width: 300px) {
+ 	table {width:100%;}
+ 	thead {display: none;}
+ 	tr:nth-of-type(2n) {background-color: inherit;}
+ 	tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+ 	tbody td {display: block;  text-align:center;}
+ 	tbody td:before {
+ 	    content: attr(data-th);
+ 	    display: block;
+ 	    text-align:center;
+ 	  }
+ }
+
+ #main{overflow-x: hidden;
+ }
+
+ #left-panel{
+   padding-left: 0 !important;
+   padding-top: 49 !important;
+ }
+
+ .bottom-space {
+ 	margin-bottom:50px;
+ }
+
+ .center-element {
+ 	display:block;
+ 	text-align:center;
+ 	cursor:pointer;
+ }
+
+ .link {
+ 	cursor:pointer;
+ }
+
+ .header-button {
+ 	width:70px;
+ 	text-align: center;
+ 	cursor:pointer;
+ }
+
+ .no-margin {
+ 	margin:0px;
+ }
+
+ .small-margin-top {
+ 	margin-top:20px;
+ }
+
+ .frontline-1-background {
+ 	display: block;
+ 	background-image:url("../img/frontline-1.png");
+ }
+
+ .frontline-2-background {
+ 	display: block;
+ 	background-image:url("../img/paymentportal-2.png");
+ }
+
+ .frontline-3-background {
+ 	display: block;
+ 	background-image:url("../img/paymentportal-3.png");
+ }
+
+ .minimized {
+ 	overflow:auto;
+ 	text-align:center;
+ 	cursor:pointer;
+ }
+
+ .expanded {
+ 	height: 1000px;
+ 	text-align:center;
+ }
+
+ .social-wall-tile {
+ 	cursor:pointer;
+ 	float:right;
+ 	margin-top:20px;
+ }
+
+ .right-float {
+ 	float:right;
+ }
+
+ .left-float {
+ 	float:left;
+ 	clear:both;
+ }
+
+ .small-margin {
+ 	margin:10px;
+ }
+
+ .small-margin-bottom {
+ 	margin-bottom:15px;
+ }
+
+ .loader {
+     border: 16px solid #f3f3f3; /* Light grey */
+     border-top: 16px solid #3498db; /* Blue */
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     animation: spin 2s linear infinite;
+ }
+
+ @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+ }
+
+ .planetBG {
+ 	background-image: url('../img/custom/bg_Img.jpg') !important;
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+ 	min-height:1200px;
+ }
+
+ .labelCA {
+ 	display: block;
+ 	font-size: 16px;
+ }
+
+ .labelGC {
+ 	display: inline-block;
+ 	font-size: 16px;
+ }
+
+ #twitbox {
+ 	height: 800px !important;
+ 	width: 250px;
+ 	border-color: black;
+ 	border-style: solid;
+ 	border-width: thick;
+ }
+
+ #ads p {
+ 	text-align: center;
+ 	border: black;
+ 	border-style: solid;
+ 	border-width: thin;
+ 	margin-top: 20px;
+ 	margin-bottom: 0px;
+ 	font-size: initial;
+ 	background-color: lightgray;
+ 	padding-top: 4px
+ }
+
+ #pMenu {overflow:hidden; overflow-y:scroll; height: auto; padding-left: 20px; padding-right: 20px; background-color: white;}
+ #pMenu li {list-style-type: none; text-align: center; border: .1em solid; border-color: inherit;} /* height: 3em; width: 12em; */
+ #pMenu a {margin: auto; display: block; padding: .5em; height: inherit; width: inherit;}
+ .aSelected {background-color: rgba(0,0,0,.43);}
+ #hank {height: 65em;}
+ #lilJimmy {height: 65em;}
+ .show {height: 32px !important;}
+ .mices {cursor: pointer; color:#3276b1}
+ #box5 {color: black;}
+ #qaMenu li {list-style-type: none; padding-top: 10px;}
+ #mainLog {height: 70em; background: url(../img/temp1.png); background-repeat: no-repeat; background-size: cover;}
+ #logLogo {height: 90px; background: url(../img/20yearsPortal2.png); background-repeat: no-repeat;background-size: contain; background-position: center;}
+ #pics {border-width: thick; border-style: solid; border-color: lightgray;}
+ #footLinks {color:white; text-align: center;}
+ #footLinks a {cursor: pointer;}
+ body:not(.menu-on-top).desktop-detected{min-height: auto !important;}
+ #sketchdiv {user-select: none;}
+
+ .page-footer {
+     height: auto !important;
+     position: inherit;
+ }
+ .homeDivs {
+     cursor: pointer;
+     padding: 5px 10px;
+     margin: 10px 0px;
+     text-align: center;
+     border-radius: 7px;
+     border-style: ridge;
+     font-family: Arial,sans-serif;
+     font-size: large;
+ }
+
+ .homeDivs img {border-bottom-width: thick; border-bottom-style: solid; border-bottom-color: black; padding-bottom: 5px;}
+
+ .FAQtext {
+    margin:auto;
+    margin-top:40px;
+    text-align: center;
+    font-size:1.5em;
+    border-style:solid;
+    border-width:1px;
+    padding:50px;
+    background-color: white !important;
+ }
+
+ .vidBox {
+    margin:auto;
+    margin-top:40px;
+    text-align: center;
+    font-size:1.5em;
+    border-style:solid;
+    border-width:1px;
+    padding:50px;
+    background-color: white !important;
+    height: 1000px;
+    overflow-y: scroll;
+ }
+
+ .tooltips {
+     position: relative;
+     display: inline-block;
+ }
+
+ .tooltips .tooltiptexts {
+     visibility: hidden;
+     width: 200px;
+     background-color: black;
+     color: #fff;
+     text-align: center;
+     border-radius: 6px;
+     padding: 5px 0;
+
+     /* Position the tooltip */
+     position: absolute;
+     z-index: 1;
+     left: 50%;
+     margin-left: -60px;
+ }
+
+ .tooltips:hover .tooltiptexts {
+     visibility: visible;
+ }
+
+ .gcThumbnail {
+     margin: 0 auto;
+ }
+
+ .hidden {
+  	display:none;
+  }
+
+ .visible {
+  	display:block;
+  }
+
+  .large-pdf {
+  	height:1000px;
+  }
+
+  .dt-buttons {
+  	margin-top:20px;
+  }
+
+  .dataTables_paginate {
+  	margin-top:20px !important;
+  }
+
+  .date-filter {
+  	float:left;
+  	margin-bottom:15px;
+  }
+
+  .dataTables_filter {
+  	float:right;
+  	width:auto;
+  }
+
+  .dataTables_wrapper {
+  	margin-bottom: 40px;
+  }
+
+  .PCItext {
+ 	margin:150px;
+ 	margin-top:40px;
+ 	text-align:left;
+ 	font-size:16px;
+ 	border-style:solid;
+ 	border-width:1px;
+ 	padding:50px;
+ 	background-color: white !important;
+  }
+
+  .updateButton {
+ 	 margin-top:60px;
+ 	 margin-bottom:30px;
+  }
+
+  .button-div {
+ 	 margin-top:50px;
+  }
+
+  .status-panel-hidden {
+ 	 display:none;
+ 	 color:black;
+ 	 background-color:white;
+ 	 border-color:black;
+ 	 margin-top:70px;
+ 	 text-align: center;
+ 	 resize:none;
+ 	 padding:15px;
+  }
+
+  .status-panel-success {
+ 	 display:block;
+ 	 color:green;
+ 	 background-color:#90EE90;
+ 	 border-color:green;
+ 	 margin-top:70px;
+ 	 text-align: center;
+ 	 resize:none;
+ 	 padding:15px;
+  }
+
+  .status-panel-warning {
+ 	display:block;
+ 	color:yellow;
+ 	background-color:#ffffe0;
+ 	border-color:yellow;
+ 	margin-top:70px;
+ 	text-align: center;
+ 	resize:none;
+ 	padding:15px;
+  }
+
+  .status-panel-error {
+ 	display:block;
+ 	color:red;
+ 	background-color:#FFB6C1;
+ 	border-color:red;
+ 	margin-top:70px;
+ 	text-align: center;
+ 	resize:none;
+ 	padding:15px;
+  }
+
+  .login-display-hidden {
+ 	 padding:10px;
+ 	 display:none;
+  }
+
+  .login-display-show {
+ 	 padding:20px;
+ 	 display:block;
+ 	 text-align:center;
+  }
+
+  .displayNone {
+ 	 display:none;
+  }
+
+  .no-left-padding {
+    padding-left:0px;
+  }
+
+  #fullscreen>:first-child>a{display:inline-block!important;}
+
+  .spinner-gif {
+    background-image: url('../img/loading_spinner.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+ }
